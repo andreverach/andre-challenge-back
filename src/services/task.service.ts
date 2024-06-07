@@ -4,7 +4,8 @@ import dbFirebase from '../config/firebase.config';
 const tasksCollection = dbFirebase.collection('tasks');
 
 export const getTasks = async (): Promise<Task[]> => {
-  const snapshot = await tasksCollection.get();
+  //const snapshot = await tasksCollection.get();
+  const snapshot = await tasksCollection.orderBy('createdAt', 'desc').get();
   const tasks: Task[] = [];
   snapshot.forEach(doc => {
     const task = doc.data() as Task;

@@ -47,7 +47,7 @@ app.use(helmet.xssFilter());
 
 //cors
 const corsOptions = {
-  origin: ['http://localhost:4200', 'https://andre-challenge-front.netlify.app'],
+  origin: ['http://localhost:4200', 'https://andre-challenge-front.netlify.app'], 
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   preflightContinue: false,
   optionsSuccessStatus: 204
