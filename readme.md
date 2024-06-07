@@ -24,7 +24,7 @@ Esta es una aplicación de Express escrita en TypeScript para gestionar tareas. 
 
 ## Demo
 
-Puedes ver una demo en vivo de la aplicación [aquí](andre-challenge-front.netlify.app) 🌐
+Puedes ver una demo en vivo de la aplicación [aquí](https://andre-challenge-front.netlify.app/auth/login) 🌐
 
 ## Clonar el Repositorio
 
