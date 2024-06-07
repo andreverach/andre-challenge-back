@@ -42,7 +42,7 @@ export const udpdateTasksController = async (req: Request, res: Response) => {
     const newTask: Task = {
       title: req.body.title,
       description: req.body.description,
-      status: req.body.status,
+      status: req.body.status || false,
     };
 
     const taskResponse = await updateTasks(taskId, newTask);
